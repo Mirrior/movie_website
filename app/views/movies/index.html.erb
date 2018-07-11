@@ -6,7 +6,6 @@
   <thead>
     <tr>
       <th>Poster</th>
-      <th>Time</th>
       <th>Description</th>
       <th colspan="3"></th>
     </tr>
@@ -16,7 +15,6 @@
     <% @movies.each do |movie| %>
       <tr>
         <td><%= movie.poster %></td>
-        <td><%= movie.time %></td>
         <td><%= movie.description %></td>
         <td><%= link_to 'Show', movie %></td>
         <td><%= link_to 'Edit', edit_movie_path(movie) %></td>
